@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Écran de démarrage : fond blanc, logo centré -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@mipmap/pizza1"
+        android:contentDescription="Logo Delizioso"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter" />
+
+</FrameLayout>

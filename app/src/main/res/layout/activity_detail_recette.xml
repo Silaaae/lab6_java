@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Écran de détail : ScrollView pour permettre le défilement vertical -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Grande photo de la pizza en haut de la fiche -->
+        <ImageView
+            android:id="@+id/imgDetail"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Photo de la pizza" />
+
+        <!-- Titre de la recette -->
+        <TextView
+            android:id="@+id/tvDetailTitre"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Durée + coût estimé -->
+        <TextView
+            android:id="@+id/tvDetailMeta"
+            android:layout_marginTop="4dp"
+            android:textColor="#888888"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Section Ingrédients -->
+        <TextView
+            android:text="🧄 Ingrédients :"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvDetailIngredients"
+            android:layout_marginTop="4dp"
+            android:lineSpacingExtra="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Section Description -->
+        <TextView
+            android:text="📖 Description :"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvDetailDescription"
+            android:layout_marginTop="4dp"
+            android:fontFamily="serif"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Section Étapes de préparation -->
+        <TextView
+            android:text="👨‍🍳 Étapes de préparation :"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvDetailEtapes"
+            android:layout_marginTop="4dp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

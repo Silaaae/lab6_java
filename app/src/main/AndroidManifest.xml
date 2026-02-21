@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    AndroidManifest.xml — la carte d'identité de l'application.
+    Déclare toutes les Activities et indique laquelle démarrer en premier.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.delizioso">
+
+    <application
+        android:allowBackup="true"
+        android:label="Delizioso"
+        android:roundIcon="@mipmap/pizza1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- SplashActivity : point d'entrée de l'application (MAIN + LAUNCHER) -->
+        <activity android:name=".ui.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ListeRecettesActivity : écran principal avec toutes les pizzas -->
+        <activity android:name=".ui.ListeRecettesActivity"
+            android:exported="false" />
+
+        <!-- DetailRecetteActivity : fiche complète d'une recette -->
+        <activity android:name=".ui.DetailRecetteActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
